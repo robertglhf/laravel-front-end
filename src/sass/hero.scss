@@ -1,0 +1,62 @@
+$brown: #c19663;
+
+.hero-img {
+  z-index: 1;
+  background-image: url(../images/hero.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  transition: background-size 100ms ease-in-out;
+}
+
+.hero-text {
+  z-index: 2;
+  position: absolute;
+  // top: 60vh;
+  bottom: 10vh;
+  left: 5%;
+  width: 60%;
+  color: white;
+  font: {
+    family: Abril Fatface;
+    weight: normal;
+    size: 51px
+  }
+
+  @media screen and (max-width: 600px){
+    // top: 30vh;
+    width: 90%;
+  }
+}
+
+  .hero-desc {
+    font: {
+      family: Open Sans;
+      size: 18px;
+      weight: normal;
+    }
+  }
+
+  .hero-cta {
+    font: {
+      size: 18px;
+      family: open sans;
+      weight: bold;
+    }
+    margin-top: 3em;
+    border: 3px solid $brown;
+    width: 7em;
+    padding: 20px 40px;
+    color: $brown;
+    transition: background-color 50ms ease-in ;
+    &:active { background-color: $brown; color: white;};
+    a {
+      color: $brown;
+      text-decoration: none;
+      &:active {
+        color: #ffffff;
+      }
+    }
+  }
