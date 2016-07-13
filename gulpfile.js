@@ -25,14 +25,16 @@ gulp.task('sass', function(){
 
 // autoprefix compiled css
 
-gulp.task('prefix', function(){
-    return gulp.src('dist/css/*.css')
-    .pipe(prefixer({
-        browser: ['last 2 versions'],
-        cascade: true
-    }))
-    .pipe(gulp.dest('dist/css/*+_prefixed.css'))
-});
+// this needs work lol
+
+// gulp.task('prefix', function(){
+//     return gulp.src('dist/css/*.css')
+//     .pipe(prefixer({
+//         browser: ['last 2 versions'],
+//         cascade: true
+//     }))
+//     .pipe(gulp.dest('dist/css/*+_prefixed.css'))
+// });
 
 //jade compiler
 
@@ -92,7 +94,7 @@ gulp.task('watch', ['browserSync', 'sass', 'cache', 'jade', 'js-concat'], functi
     console.log("")
     console.log("")
     console.log("")
-    console.log("FUCK YOU!")
+    console.log("Kawaii killer")
     console.log("")
     console.log("")
     console.log("")
