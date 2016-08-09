@@ -1,5 +1,1 @@
-$(document).ready(function(){
-    $('li').click(function(){
-        $(this).toggleClass('selected-item');
-    });
-});
+$(document).ready(function(){$("li").click(function(){$(this).addClass("selected-item").siblings().removeClass("selected-item")}),($(".offers ul li").is(".selected-item")||$(".offers ul li").hasClass(".selected-item"))&&$(".showcase--fish").css({display:"flex"})}),$(window).scroll(function(){var s=$(this).scrollTop();s>=50&&($(".dsktp").css({"background-color":"white"}),$(".dsktp ul li a").css({color:"black"})),50>s&&($(".dsktp").css({"background-color":""}),$(".dsktp ul li a").css({color:"white"})),$(".parallax").css({transform:"translate(0px,"+s/65+"%)"})});

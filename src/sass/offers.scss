@@ -1,91 +1,89 @@
-h2 {
-  font: {
-    family: Abril Fatface;
-    weight: normal;
-    size: 42px;
-  }
-  text-align: center;
-}
-
-ul {
-  text-align: center;
-  padding-left: 0;
-
-  li {
-    position: relative;
+.offers {
+  h2 {
     font: {
-      family: Open Sans;
-      size: 18;
+      family: Abril Fatface;
       weight: normal;
+      size: 42px;
     }
-    padding: 30px;
-    color: black;
-    display: inline-block;
-
-    @media screen and (max-width: 600px) {
-      display: block;
-      padding: 10px;
-    }
+    text-align: center;
   }
-}
 
-select {
-  display: flex;
-  justify-content: center;
-  border: 0;
-  background-color: white;
-  margin-left: 130px;
-  margin-bottom: 40px;
-}
+  ul {
+    text-align: center;
+    padding-left: 0;
 
-.showcase {
-  display: flex;
-  justify-content: center;
-  flex-flow: wrap;
-
-  img {
-    padding: 10px;
-    border: 1px solid black;
-    margin: 10px;
-  }
-}
-
-ul {
-  li {
-    border-bottom: 2px solid transparent;
-    padding-bottom: 0px;
-    cursor: pointer;
-    transition: border-bottom .1s ease-in-out, padding-bottom .1s ease-in-out;
-  }
-}
-
-
-.selected-item {
-  font-weight: bold;
-  border-bottom: 2px solid $brown;
-  padding-bottom: 10px;
-}
-
-.show-more {
-  font: {
-    family: Abril Fatface;
-    weight: normal;
-    size: 18; 
-  }
-  text-align: center;
-  padding: 10px;
-  a {
-    text-decoration: none;
-    border-bottom: 2px solid transparent;
-    transition: border-bottom .1s, color .1s;
-
-    &:visited {
-      text-decoration: none;
+    li {
+      position: relative;
+      padding: 30px;
       color: black;
+      display: inline-block;
+      font: {
+        family: Open Sans;
+        size: 18;
+        weight: normal;
+      }
+      
+      &:hover {
+        font-weight: bold;
+      }
+
+      @media screen and (max-width: 600px) {
+        display: block;
+        padding: 10px;
+      }
     }
-    &:hover {
-      border-bottom: 2px solid $brown;
-      color: lighten(black, 25%);
+  }
+
+  .showcase--fish {
+    display: none;
+    justify-content: center;
+    flex-flow: wrap;
+
+    img {
+      padding: 0;
+      border: 5px solid white;
+      margin: 10px;
+      box-shadow: 10px, 10px, 10px, 5px black;
+    }
+  }
+
+  ul {
+    li {
+      border-bottom: 2px solid transparent;
+      padding-bottom: 0px;
+      cursor: pointer;
+      transition: border-bottom .1s ease-in-out, padding-bottom .1s ease-in-out;
+    }
+  }
+
+
+  .selected-item {
+    font-weight: bold;
+    border-bottom: 2px solid $brown;
+    padding-bottom: 10px;
+  }
+
+  .show-more {
+    font: {
+      family: Abril Fatface;
+      weight: normal;
+      size: 18;
+    }
+    text-align: center;
+    padding: 10px;
+    a {
+      text-decoration: none;
+      border-bottom: 2px dotted transparent;
+      transition: border-bottom .1s, color .1s;
+
+      &:visited {
+        text-decoration: none;
+        color: black;
+      }
+      &:hover {
+        border-bottom: 2px solid $brown;
+        color: lighten(black, 25%);
+      }
     }
   }
 }

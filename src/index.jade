@@ -5,28 +5,31 @@ head
   link(rel="stylesheet", href="css/style.css")
 body
 
+  include jade/nav.jade
+
   header
     .hero-img
     .hero-text The best restaurant
       .hero-desc Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
       .hero-cta <a href="#">Book a table</a>
 
-
   section.offers
-    h2 Our dishes
+    h2 Offers
 
-  section
     ul
-      li FISH
-      li MEAT
-      li.selected-item SALADS
-      li DESSERTS
+      li.fish FISH
+      li.meat MEAT
+      li.salad SALADS
+      li.dessert DESSERTS
+    
   
-  
-  .showcase  
-      img(src="https://unsplash.it/240?image=835")
-      img(src="https://unsplash.it/240?image=835")
-      img(src="https://unsplash.it/240?image=835")
-      img(src="https://unsplash.it/240?image=835")
-  .show-more <a href=""> show more  > </a>
+    .showcase--fish  
+        img(src="https://unsplash.it/240/?image=780")
+        img(src="https://unsplash.it/240/?image=780")
+        img(src="https://unsplash.it/240/?image=780")
+        img(src="https://unsplash.it/240/?image=780")
+    .show-more <a href=""> show more  > </a>
       
+  section.features
+
+    .parallax
