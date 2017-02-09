@@ -50,7 +50,7 @@ $(document).ready(function(){
 $(window).scroll(function () {
     var pScroll = $(this).scrollTop();
 
-    if (scroll >= 50 ) {
+    if (pScroll >= 50 ) {
         $('.dsktp').css({
             'background-color' : 'white',
         });
@@ -58,7 +58,7 @@ $(window).scroll(function () {
              'color' : 'black'
         });
     }
-    if (scroll < 50) {
+    if (pScroll < 50) {
         $('.dsktp').css({
             'background-color' : ''
         });
