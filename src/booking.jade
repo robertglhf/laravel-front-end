@@ -1,6 +1,60 @@
 html
 head
     include jade/meta.jade
+    link(rel="stylesheet", href="css/booking.css")
 body
-    section 
-        p Hello
+    .wrapper
+        .intro
+            .bg
+        .rest
+            .title 
+                h2 Book a table
+            .formbox
+                label Name  
+                    input(type="text")
+                label Email
+                    input(type="text")
+                label Phone
+                    input(type="number")
+                label Date
+                    select
+                        -var n = 1;
+                            while n <= 30
+                                option= n++
+                    select
+                        //- -var n = 1;
+                        //- while n <= 12
+                        //-     option= n++
+                        option January
+                        option February
+                        option March
+                        option April
+                        option May
+                        option June
+                        option July
+                        option August
+                        option September
+                        option November
+                        option December
+                        
+                    select
+                        each year in [2017,2018]
+                            option= year
+                label Time
+                    select
+                        -var n = 10
+                        while n <= 23
+                            option= n++
+                    select
+                        each minute in [00,15,30,45]
+                            option= minute
+                label Table for
+                    select
+                        each val in [1, 2, 3, 4, 5, 6]
+                            option= val
+
+                input(type="submit" onclick="window.location='/dist' ; ")
+
+        .otherreq
+        h3 For bigger events or information call us at 
+            span 0756-937-939    

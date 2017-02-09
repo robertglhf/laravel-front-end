@@ -5,24 +5,37 @@ head
   link(rel="stylesheet", href="css/style.css")
 body
 
-  include jade/nav.jade
+  //- include jade/nav.jade
 
   header
     .hero-img
     .hero-text The best restaurant
-      .hero-desc Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-      .hero-cta <a href="#">Book a table</a>
+      .hero-desc Best restaurant in the town, serving the freshest food since 2007, and the most delicious dishes inspired by french and british cuisine, also the winner of multiple awards. 
+      .hero-cta <a href="booking.html">Book a table</a>
 
   section.offers
     h2 Offers
+    h4 Check out this months offers!
 
-    ul
-      li.fish FISH
-      li.meat MEAT
-      li.salad SALADS
-      li.dessert DESSERTS
+    //- ul#container
     
-  
+    //-   li FISH
+    //-   li MEAT
+    //-   li SALADS
+    //-   li DESSERTS
+    
+    ul#container
+       li
+        a(href="fish.html") FISH
+       li
+        a(href="meat.html" ) MEAT
+       li
+        a(href="salads.html" ) SALADS
+       li
+        a(href="desserts.html" ) DESSERTS
+        
+    #ajax-content
+
     .showcase--fish  
         img(src="https://unsplash.it/240/?image=780")
         img(src="https://unsplash.it/240/?image=780")

@@ -91,15 +91,6 @@ gulp.task('js-concat',function(){
 
 
 gulp.task('watch', ['browserSync', 'sass', 'cache', 'jade', 'js-concat'], function(){
-    console.log("")
-    console.log("")
-    console.log("")
-    console.log("Kawaii killer")
-    console.log("")
-    console.log("")
-    console.log("")
-
-    
     gulp.watch('src/**/*.scss', ['sass']);
     gulp.watch('src/**/*.jade', ['jade']);
     gulp.watch('src/**/*.js', ['js-concat']);
