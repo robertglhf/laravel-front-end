@@ -1,7 +1,8 @@
 html
 head
   include jade/meta.jade
-  <meta name="theme-color" content="#db5945">
+  //- <meta name="theme-color" content="#db5945">
+  meta(name="theme-color" content="db5945")
   link(rel="stylesheet", href="css/style.css")
 body
 
@@ -43,6 +44,38 @@ body
         img(src="https://unsplash.it/240/?image=780")
     .show-more <a href=""> show more  > </a>
       
+  .parallax
+      
   section.features
+    
+    h2.featureh2 Features
 
-    .parallax
+    .sets
+      .item
+        img.item-img(src="images/icons/coctail.png", alt="")
+        p.item-desc 200+ Coctails
+      .item
+        img.item-img(src="images/icons/burger.png", alt="Coctails!!!")
+        p.item-desc Huge burgers
+      .item
+        img.item-img(src="images/icons/pin.png", alt="")
+        p.item-desc 21 restaurants in </br> 8 countries
+      .item
+        img.item-img(src="images/icons/heart.png", alt="")
+        p.item-desc Thousands of </br> happy clients
+      .item
+        img.item-img(src="images/icons/reward.png", alt="")
+        p.item-desc 14 reward
+      .item
+        img.item-img(src="images/icons/service.png", alt="")
+        p.item-desc Best service
+        
+        
+  section.cta
+    .bg
+      //- img(src="images/cta.png", alt="")
+      .newsletter
+        h3 Subscribe to newsletter
+        input(type="text")
+        
+      

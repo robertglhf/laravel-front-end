@@ -1,0 +1,7 @@
+@mixin font($font,$size,$weight) {
+	font-family: $font;
+	font-size: $size;
+	font-weight: $weight;
+};
+
+//input styles

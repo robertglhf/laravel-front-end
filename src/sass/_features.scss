@@ -1,0 +1,47 @@
+.parallax {
+	background-image: url(../images/parallax.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	height: 20vh;
+	width: 100%;
+}
+
+.features {
+	padding: 0;
+	margin: 0;
+	max-width: 800px;
+	margin: 0px auto;
+	padding-bottom: 50px;
+}
+
+.featureh2 {
+	margin: 25px;
+	padding-top: 50px;
+}
+
+.sets{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-flow: column wrap;
+	// flex-wrap: wrap;
+	height: 400px;
+	// max-width: 800px;
+	// text-align: center;
+
+	@media screen and (max-width: 600px) { height: 700px;}
+
+	.item {
+		display: flex;
+		flex-direction: row;
+	}
+	.item-img { margin: 25px; }
+	.item-desc {
+			display: flex;
+			align-items: center;
+	}
+	p {
+		@include font(Open Sans, 16px, normal)
+	}
+}

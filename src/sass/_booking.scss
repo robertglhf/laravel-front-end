@@ -1,0 +1,107 @@
+body {
+     background: {
+        image: url('../images/booking.png');
+        repeat: no-repeat;
+        size: cover ;
+        position: center;
+    };
+    box-sizing: border-box;
+    margin: 0;
+    min-height: 100%;
+    width: 100%;
+    background-attachment: fixed;
+}
+.title {
+    h2 {
+        font-family: Abril Fatface;
+        font-size: 48px;
+        font-weight: normal;
+        color: white;
+    }
+}
+h3 {
+    font-family: Open Sans;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    span {
+        // color: orangered;
+        border-bottom: 1px dotted white;
+    }
+}
+
+$input-bg-bright: rgba(255, 255, 255, 0.3);
+$input-bg-dark: rgba(0, 0, 0, 0.8);
+$input-txt: white;
+$input-txt-active: white;
+
+.wrapper {
+    background: rgba(193,150,99, 0.8);
+    position: absolute;
+    left: 10%;
+    top: 10%;
+    max-width: 80vw;
+
+    @media screen and (max-width:650px) {
+        background: transparent;
+    }
+}
+
+
+.formbox {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+    select {
+        background: $input-bg-bright;
+        border: 2px solid white;
+        font-family: Open Sans;
+        font-size: 24px;
+        color: $input-txt;
+        margin: 10px;
+        text-align: center;
+        option {
+            color: black
+        }
+    }
+
+    label {
+        color: $input-txt-active;
+        font-family: Montserrat;
+        font-weight: thin;
+        font-size: 30px;
+        padding-right: 10px;
+    }
+    input[type=text] {
+        padding: 5px;
+        margin: 10px;
+        background: $input-bg-bright;
+        color: $input-txt;
+        border: 2px solid white;
+        transition: all 100ms ease;
+        font: {
+            family: Open Sans;
+            size: 24px;
+        }
+        &:hover {
+            background: $input-bg-dark;
+            color: $input-txt-active;
+        }
+    }
+    input[type=number] {
+        @extend input[type=text];
+    }
+    input[type=submit] {
+        @extend input[type=text];
+    }
+}
+.rest {
+    z-index: 555;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}

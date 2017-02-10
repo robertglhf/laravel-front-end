@@ -1,7 +1,14 @@
 $(document).ready(function(){
 
+    var button = $('.m-button');
+    var mNav = $('mobile--nav');
+    button.click(function(){
+      console.log('shit');
+      mNav.css({'display' : 'flex'})
+    });
+
     //random bg img
-    var images = ['hero.png', 'hero2.png', 'hero3.png']
+    var images = ['hero2.png']
     $('.hero-img').css({'background-image': 'url(images/' + images[Math.floor(Math.random()* images.length)]+ ')'});
 
     //ajax tabs
@@ -43,6 +50,8 @@ $(document).ready(function(){
             'display' : 'flex'
         })
     }
+
+
 });
 
 //nav bg
@@ -60,17 +69,19 @@ $(window).scroll(function () {
     }
     if (pScroll < 50) {
         $('.dsktp').css({
-            'background-color' : ''
+            'background-color' : 'white'
         });
         $('.dsktp ul li a').css({
-             'color' : 'white'
+             'color' : 'black'
         });
     }
+
+//navbs
 
     //parallax
 
     $('.parallax').css({
-        'transform' : 'translate(0px,'+pScroll/50 +'%)'
+        'transform' : 'translate(0px,'+pScroll/65 +'%)'
     })
 
 });

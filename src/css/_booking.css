@@ -6,10 +6,8 @@ body {
   box-sizing: border-box;
   margin: 0;
   min-height: 100%;
-  width: 100%; }
-  @media screen and (max-width: 600px) {
-    body {
-      background-attachment: fixed; } }
+  width: 100%;
+  background-attachment: fixed; }
 
 .title h2 {
   font-family: Abril Fatface;
@@ -36,20 +34,10 @@ h3 {
       background: transparent; } }
 
 .formbox {
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-flex-wrap: wrap;
-  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
   flex-direction: column;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
   justify-content: center;
-  -webkit-align-items: center;
-  -ms-flex-align: center;
   align-items: center;
   padding: 25px; }
   .formbox select {
@@ -68,7 +56,7 @@ h3 {
     font-weight: thin;
     font-size: 30px;
     padding-right: 10px; }
-  .formbox input[type=text] {
+  .formbox input[type=text], .formbox input[type=number], .formbox input[type=submit] {
     padding: 5px;
     margin: 10px;
     background: rgba(255, 255, 255, 0.3);
@@ -77,48 +65,13 @@ h3 {
     transition: all 100ms ease;
     font-family: Open Sans;
     font-size: 24px; }
-    .formbox input[type=text]:hover {
-      background: rgba(0, 0, 0, 0.8);
-      color: white; }
-  .formbox input[type=number] {
-    padding: 5px;
-    margin: 10px;
-    background: rgba(255, 255, 255, 0.3);
-    color: white;
-    border: 2px solid white;
-    transition: all 100ms ease;
-    font-family: Open Sans;
-    font-size: 24px; }
-    .formbox input[type=number]:hover {
-      background: rgba(0, 0, 0, 0.8);
-      color: white; }
-    .formbox input[type=number]:focus {
-      background: rgba(0, 0, 0, 0.8);
-      color: white; }
-  .formbox input[type=submit] {
-    padding: 5px;
-    margin: 20px;
-    background: rgba(255, 255, 255, 0.3);
-    color: white;
-    border: 2px solid white;
-    transition: all 100ms ease;
-    font-family: Open Sans;
-    font-size: 24px; }
-    .formbox input[type=submit]:hover {
+    .formbox input[type=text]:hover, .formbox input[type=number]:hover, .formbox input[type=submit]:hover {
       background: rgba(0, 0, 0, 0.8);
       color: white; }
 
 .rest {
   z-index: 555;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
   justify-content: center;
-  -webkit-align-items: center;
-  -ms-flex-align: center;
   align-items: center;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
   flex-direction: column; }

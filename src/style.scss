@@ -1,15 +1,28 @@
-@import "sass/hero";
-@import "sass/offers";
-@import "sass/nav";
-@import "sass/features";
+@import "sass/_mixins.scss";
+@import "sass/_hero.scss";
+@import "sass/_offers.scss";
+@import "sass/_nav.scss";
+@import "sass/_features.scss";
+@import "sass/_cta.scss";
 
 body, html {
   padding: 0;
   margin: 0;
-  height: 2000px;
+  height: 3000px;
   background-color: #f3f3f3;
+
 }
 
 body::-webkit-scrollbar {
     display: none;
+}
+
+h2 {
+  font: {
+    family: Abril Fatface;
+    weight: normal;
+    size: 42px;
+  }
+  text-align: center;
+  -webkit-margin-after: -.5em;
 }

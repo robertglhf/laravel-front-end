@@ -1,0 +1,44 @@
+.cta{
+
+}
+
+.bg{
+  background-image: url(../images/cta.png);
+  height: 400px;
+  width: 100%;
+  position: relative;
+  float: left;
+}
+
+.newsletter {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: rgba(255,255,255, 0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30%;
+
+  @media screen and (max-width: 600px) {flex-flow: wrap; height: 50%;}
+}
+
+h3{
+  @include font(Abril Fatface, 32px, normal);
+  color: white
+}
+
+input[type=text] {
+  padding: 5px;
+  margin: 10px;
+  background: rgba(255,255,255, 0.5);
+  color: white;
+  border: 2px solid white;
+  transition: all 100ms ease;
+  width: 50vw;
+  height: 50px;
+  font: {
+      family: Open Sans;
+      size: 24px;
+  }
+}
