@@ -8,13 +8,13 @@
 body, html {
   padding: 0;
   margin: 0;
-  height: 3000px;
+  // height: 3000px;
   background-color: #f3f3f3;
 
 }
 
 body::-webkit-scrollbar {
-    display: none;
+    // display: none;
 }
 
 h2 {
@@ -25,4 +25,39 @@ h2 {
   }
   text-align: center;
   -webkit-margin-after: -.5em;
+}
+
+#footer {
+  height: 480px;
+  position: relative;
+  width: 100%;
+  .copyr {
+    position: absolute;
+    bottom: 0;
+    height: 80px;
+    width: 100%;
+    // text-align: center;
+    background-color: white;
+    display: flex;
+    align-items: center;
+
+    // margin-top: 500px;
+    .links{
+      width: 50%;
+      text-align: right;
+    }
+    i {
+      font-size: 24px;
+      margin: 15px;
+      color: black;
+    }
+    p {
+      -webkit-margin-after: 0;
+      -webkit-margin-before: 0;
+      // margin: 50px;
+      // margin-bottom: 0;
+      @include font(Open Sans, 15px, bold);
+      width: 50%;
+    }
+  }
 }
