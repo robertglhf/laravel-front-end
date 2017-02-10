@@ -54,8 +54,9 @@ h2 {
     p {
       -webkit-margin-after: 0;
       -webkit-margin-before: 0;
-      // margin: 50px;
+      margin-left: 20px;
       // margin-bottom: 0;
+
       @include font(Open Sans, 15px, bold);
       width: 50%;
     }
