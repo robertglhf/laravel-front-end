@@ -48,3 +48,5 @@ Temporary Items
 
 # NPM modules folder
 node_modules/
+.vscode/
+.atom/
